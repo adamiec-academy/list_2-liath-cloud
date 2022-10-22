@@ -1,6 +1,6 @@
 def multiplication_table(y1, y2, x1, x2):
     # Counting Max Space
-    highest_no = len(str(y2 * x2)) + 2
+    highest_no = len(str(y2 * x2)) + 1
 
     first_line = " " * highest_no + "|"
 
