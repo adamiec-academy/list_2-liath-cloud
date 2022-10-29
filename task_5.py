@@ -45,7 +45,7 @@ def decipher(text, shift):
 
             elif letter_no < 65:
 
-                new_letter = 90 - 65 + letter_no
+                new_letter = 91 - 65 + letter_no
                 new_message += chr(new_letter)
 
             else:
