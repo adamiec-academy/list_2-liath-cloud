@@ -9,7 +9,7 @@ def cipher(text, shift):
             letter_no = ord(i)
             letter_no += shift
 
-            if ord(i) > 96 and letter_no > 90:
+            if ord(i) < 91 and letter_no > 90:
 
                 letter_no -= 90
                 new_letter = 64 + letter_no
