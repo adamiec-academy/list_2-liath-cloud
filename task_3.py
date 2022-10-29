@@ -5,6 +5,10 @@ def is_prime(n):
 
     while i != n:
 
+        if n == 1:
+            flag += 1
+            break
+            
         if i not in dzielniki:
 
             if n % i != 0:
