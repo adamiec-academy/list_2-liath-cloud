@@ -9,7 +9,7 @@ def cipher(text, shift):
             letter_no = ord(i)
             letter_no += shift
 
-            if letter_no > 90 and letter_no <97:
+            if ord(i) > 96 and letter_no > 90 and letter_no <97:
 
                 letter_no -= 90
                 new_letter = 64 + letter_no
@@ -38,7 +38,7 @@ def decipher(text, shift):
             letter_no = ord(i)
             letter_no -= shift
 
-            if letter_no > 90 and letter_no <97:
+            if ord(i) > 96 and letter_no > 90 and letter_no <97:
 
                 new_letter = 123 - 97 + letter_no
                 new_message += chr(new_letter)
